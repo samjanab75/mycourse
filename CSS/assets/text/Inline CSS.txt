@@ -1,0 +1,126 @@
+Inline CSS
+
+<h1 style="property1: value1; property2: value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+<h2 style="property1: value; property2:  value2; property3: value3:">content</h1>
+
+
+
+Internal CSS & External CSS
+
+h1{
+   property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+property1:value1;
+   property2: value2;
+   property3:value2;}
+
+
+
+
+
+
+
+
