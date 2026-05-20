@@ -1,0 +1,27 @@
+ *style.css*
+
+h1 {
+    background-color: violet;
+    color: black;
+}
+
+p {
+    background-color: rgb(206, 130, 238);
+    color: black;
+}
+
+div {
+    background-color: rgb(130, 211, 238);
+    color: black;
+}
+
+span {
+    background-color: rgb(130, 168, 238);
+    color: black;
+}
+
+
+h3 {
+    background-color: violet;
+    color: black;
+}
