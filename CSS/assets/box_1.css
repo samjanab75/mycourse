@@ -1,29 +1,24 @@
-.parent {
-    background-color: black;
-    color: whitesmoke;
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.GALLERY{
+    width: 600px;
     height: 400px;
-    width: 350px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
+    background-color: rgb(255, 255, 0);
+    border: 20px solid rgb(196, 255, 230);
+   margin: auto;
 }
 
-.sub {
-    background-color: bisque;
-    color: brown;
-    height: 300px;
-    width: 250px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.child {
+.MYGALLERY{
     background-color: black;
-    color: tomato;
+    color: rgb(71, 255, 83);
     height: 200px;
-    width: 150px;
+    width: 200px;
     margin: auto;
     padding: 20px;
     text-align: center;
+    font-size: medium;
 }

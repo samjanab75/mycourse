@@ -1,20 +1,27 @@
- .child{
-    background-color: yellow;
-    color: violet;
-    height: 230px;
-    width: 200px;
-    margin: auto;
-    padding: 30px;
-    text-align: center;
-    border: 30px;
-}
-.parent-box{
-    background-color: brown;
-    width: 350px;
-    height: 350px;
-    text-align: center;
-    padding: 30px;
-    margin: auto;
-    border: 0cap;
+ *
+ {
+     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 
 }
+
+
+        .Gallery {
+            width: 500px;
+            height: 500px;
+            background-color:green;
+            border: 20px solid purple;
+            margin: auto;
+            text-align: center;
+        }
+
+        .Gallery h1{
+            color: white;
+            text-align: left;
+            padding-top: 40px;
+            font-size: 55px;
+            font-family: calibri;
+        }
+
+ 
