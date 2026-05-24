@@ -1,0 +1,27 @@
+ *
+ {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav_bar{
+background-color: rgb(179, 214, 227);
+display: flex;
+justify-content: space-between;
+text-decoration: solid rgb(131, 123, 150);
+align-items: center;
+padding: 10px;
+}
+.logo{
+ 
+font: 70px;
+font-weight: 100;
+}
+
+.menu 
+{
+display: flex;
+gap: 20px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
