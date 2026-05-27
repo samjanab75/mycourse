@@ -13,14 +13,3 @@ body{
     overflow: hidden;
 
 }
-.parent {
-    background-color: #b37575;
-padding: 100px;
-}
-.child{
-    background-color: antiquewhite;
-    height: 200px;
-    width:1000px ;
-    padding: 200px;
-
-}
