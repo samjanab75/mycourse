@@ -1,0 +1,42 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow: hidden;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.card{
+    width: 300px;
+    background-color: bisque;
+    border-radius: 7px;
+    height: 300px;
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+ 
+}
+.card:hover{
+    transform: scale(1.07); 
+}
+.content{
+    padding: 15px;
+    text-align: center;
+    
+
+}
+.btn:hover{
+    background-color: aqua;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
