@@ -1,0 +1,57 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     scroll-behavior: smooth;
+
+ }
+
+ body {
+     font-family: 'Times New Roman', Times, serif;
+     overflow: hidden;
+     background-color: rgba(207, 185, 87, 0.653);
+     padding: 40px;
+
+ }
+
+ .container {
+
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 30px;
+ }
+
+ .card {
+     background-color: rgb(3, 36, 52);
+     color: rgb(240, 189, 127);
+     border-radius: 15px;
+     overflow: hidden;
+     box-shadow: 0 8px 45px rgba(87, 90, 20, 0.851);
+     transition: 0.5s ease;
+ 
+ }
+
+ .card img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+ }
+
+ .card-content {
+     padding: 100px;
+
+ }
+ 
+ .card-content h3 {
+     margin-bottom: 15px;
+ }
+
+ .card:hover {
+     transform: scale(1.08);
+
+ }
+
+ 

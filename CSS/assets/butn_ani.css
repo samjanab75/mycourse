@@ -1,0 +1,44 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.container{
+    background-color: rgb(6, 24, 51);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 500px;
+    border:22px;
+   
+}
+.btn{
+    padding: 15px 40px;
+    font-size: 18px;
+    background-color: rgba(234, 222, 222, 0.681);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    gap: 30px;
+
+}
+.btn:hover
+{
+    transform: scale(1.2);
+
+}
