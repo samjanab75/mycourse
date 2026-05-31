@@ -7,8 +7,8 @@
 .container {
   background-color: #4b272c;
   padding: 300px;
-  display: flex;
-  flex-wrap: wrap; 
+  display: flex; 
+  flex-wrap: wrap;  
   justify-content: center;
   align-items: center;
   gap: 20px;                

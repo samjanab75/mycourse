@@ -12,8 +12,9 @@
  body {
      font-family: 'Times New Roman', Times, serif;
      overflow: hidden;
-     background-color: rgba(207, 185, 87, 0.653);
+     background-color: rgb(213, 194, 96);
      padding: 40px;
+     
 
  }
 
@@ -31,6 +32,7 @@
      overflow: hidden;
      box-shadow: 0 8px 45px rgba(87, 90, 20, 0.851);
      transition: 0.5s ease;
+      
  
  }
 
@@ -38,6 +40,7 @@
      width: 100%;
      height: 200px;
      object-fit: cover;
+      
  }
 
  .card-content {
