@@ -1,0 +1,336 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap Assignment</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+/* Dashboard */
+.sidebar{
+    min-height:100vh;
+    background:#212529;
+}
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:12px;
+}
+.sidebar a:hover{
+    background:#343a40;
+}
+
+/* Landing Page */
+.hero{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+footer{
+    background:#212529;
+    color:white;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- ================= LANDING PAGE ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="#">MyCompany</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<div class="container">
+<h1>Grow Your Business With Us</h1>
+<p>Professional Web Development and Digital Solutions</p>
+<button class="btn btn-light">Get Started</button>
+</div>
+</section>
+
+<section class="container py-5" id="about">
+<div class="row align-items-center">
+<div class="col-md-6">
+<img src="https://picsum.photos/600/350" class="img-fluid rounded" alt="">
+</div>
+
+<div class="col-md-6">
+<h2>About Us</h2>
+<p>
+We provide modern web solutions and innovative digital services
+to help businesses grow online.
+</p>
+</div>
+</div>
+</section>
+
+<section class="container py-5" id="services">
+<h2 class="text-center mb-4">Our Services</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card h-100 text-center">
+<div class="card-body">
+<h4>Web Design</h4>
+<p>Responsive and attractive websites.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100 text-center">
+<div class="card-body">
+<h4>Development</h4>
+<p>Custom web applications and software.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100 text-center">
+<div class="card-body">
+<h4>Marketing</h4>
+<p>SEO and digital marketing solutions.</p>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="container py-5" id="contact">
+<h2 class="text-center mb-4">Contact Us</h2>
+
+<form>
+<div class="mb-3">
+<input type="text" class="form-control" placeholder="Your Name">
+</div>
+
+<div class="mb-3">
+<input type="email" class="form-control" placeholder="Your Email">
+</div>
+
+<div class="mb-3">
+<textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+</div>
+
+<button class="btn btn-primary">Send Message</button>
+</form>
+</section>
+
+<footer class="text-center">
+<p>© 2026 MyCompany. All Rights Reserved.</p>
+<p>Facebook | Instagram | LinkedIn</p>
+</footer>
+
+<!-- ================= COURSE CARDS ================= -->
+
+<section class="container py-5">
+<h2 class="text-center mb-4">Course Cards</h2>
+
+<div class="row g-4">
+
+<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+<div class="card h-100">
+<img src="https://picsum.photos/300/200?1" class="card-img-top">
+<div class="card-body">
+<h5>HTML</h5>
+<p>Trainer: John</p>
+<h6>₹999</h6>
+<button class="btn btn-primary w-100">Enroll</button>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+<div class="card h-100">
+<img src="https://picsum.photos/300/200?2" class="card-img-top">
+<div class="card-body">
+<h5>CSS</h5>
+<p>Trainer: David</p>
+<h6>₹1299</h6>
+<button class="btn btn-success w-100">Enroll</button>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+<div class="card h-100">
+<img src="https://picsum.photos/300/200?3" class="card-img-top">
+<div class="card-body">
+<h5>JavaScript</h5>
+<p>Trainer: Alex</p>
+<h6>₹1499</h6>
+<button class="btn btn-warning w-100">Enroll</button>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+<div class="card h-100">
+<img src="https://picsum.photos/300/200?4" class="card-img-top">
+<div class="card-body">
+<h5>React</h5>
+<p>Trainer: Emma</p>
+<h6>₹1999</h6>
+<button class="btn btn-danger w-100">Enroll</button>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+<div class="card h-100">
+<img src="https://picsum.photos/300/200?5" class="card-img-top">
+<div class="card-body">
+<h5>Node JS</h5>
+<p>Trainer: Smith</p>
+<h6>₹1799</h6>
+<button class="btn btn-info w-100">Enroll</button>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+<div class="card h-100">
+<img src="https://picsum.photos/300/200?6" class="card-img-top">
+<div class="card-body">
+<h5>Python</h5>
+<p>Trainer: James</p>
+<h6>₹2499</h6>
+<button class="btn btn-dark w-100">Enroll</button>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ================= ADMIN DASHBOARD ================= -->
+
+<section class="container-fluid mt-5">
+<h2 class="text-center py-4">Admin Dashboard</h2>
+
+<div class="row">
+
+<div class="col-md-3 col-lg-2 sidebar">
+<h4 class="text-white text-center py-3">Admin</h4>
+
+<a href="#">Dashboard</a>
+<a href="#">Users</a>
+<a href="#">Courses</a>
+<a href="#">Reports</a>
+<a href="#">Settings</a>
+</div>
+
+<div class="col-md-9 col-lg-10 p-4">
+
+<div class="row g-3 mb-4">
+
+<div class="col-md-6 col-lg-3">
+<div class="card text-center">
+<div class="card-body">
+<h3>120</h3>
+<p>Users</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card text-center">
+<div class="card-body">
+<h3>25</h3>
+<p>Courses</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card text-center">
+<div class="card-body">
+<h3>15</h3>
+<p>Reports</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="card text-center">
+<div class="card-body">
+<h3>₹50K</h3>
+<p>Revenue</p>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="card">
+<div class="card-header">
+Recent Users
+</div>
+
+<div class="table-responsive">
+<table class="table table-striped mb-0">
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>John</td>
+<td>john@gmail.com</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>David</td>
+<td>david@gmail.com</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Emma</td>
+<td>emma@gmail.com</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

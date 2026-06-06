@@ -1,0 +1,196 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tailwind Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-700 text-white">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">MyLogo</h1>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+
+                <!-- Dropdown -->
+                <li class="relative group">
+                    <button class="hover:text-yellow-300">
+                        Services ▼
+                    </button>
+
+                    <div class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg w-40 mt-2">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Web Design</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Development</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Marketing</a>
+                    </div>
+                </li>
+
+                <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Button -->
+            <button id="menuBtn" class="md:hidden text-3xl">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
+            <a href="#home" class="block py-2">Home</a>
+            <a href="#about" class="block py-2">About</a>
+            <a href="#services" class="block py-2">Services</a>
+            <a href="#contact" class="block py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section id="home" class="bg-blue-600 text-white min-h-[80vh] flex items-center justify-center text-center">
+        <div class="px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Welcome to Our Website
+            </h1>
+            <p class="text-lg mb-6">
+                Build Modern Responsive Websites Using Tailwind CSS
+            </p>
+            <button class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-6 py-16">
+        <div class="flex flex-col md:flex-row items-center gap-10">
+
+            <!-- Image Left -->
+            <div class="md:w-1/2">
+                <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+                    alt="About"
+                    class="rounded-xl shadow-lg w-full"
+                >
+            </div>
+
+            <!-- Content Right -->
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-4">About Us</h2>
+                <p class="text-gray-700 leading-7">
+                    We provide high-quality web design, development,
+                    and digital marketing services. Our team focuses
+                    on creating responsive and user-friendly websites
+                    that help businesses grow online and reach more
+                    customers effectively.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white py-16">
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-10">
+                Our Services
+            </h2>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+                    <h3 class="text-xl font-bold mb-3">Web Design</h3>
+                    <p>Create modern and attractive website designs.</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+                    <h3 class="text-xl font-bold mb-3">Web Development</h3>
+                    <p>Build responsive and scalable web applications.</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+                    <h3 class="text-xl font-bold mb-3">SEO</h3>
+                    <p>Improve search engine visibility and ranking.</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+                    <h3 class="text-xl font-bold mb-3">Digital Marketing</h3>
+                    <p>Reach more customers through online marketing.</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+                    <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+                    <p>Deliver excellent user experiences and interfaces.</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+                    <h3 class="text-xl font-bold mb-3">Branding</h3>
+                    <p>Create a strong and memorable brand identity.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-200">
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-10">
+                Contact Us
+            </h2>
+
+            <form class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="w-full border p-3 rounded mb-4"
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    class="w-full border p-3 rounded mb-4"
+                >
+
+                <textarea
+                    rows="5"
+                    placeholder="Your Message"
+                    class="w-full border p-3 rounded mb-4"
+                ></textarea>
+
+                <button
+                    type="submit"
+                    class="w-full bg-blue-700 text-white py-3 rounded hover:bg-blue-800"
+                >
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white text-center py-5">
+        <p>&copy; 2026 MyWebsite. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>
