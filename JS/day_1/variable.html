@@ -1,0 +1,191 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables - Easy Learning</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f1f5f9;
+        }
+
+        h1{
+            text-align: center;
+            color: #0f172a;
+        }
+
+        section{
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        h3{
+            color: #1d4ed8;
+        }
+
+        code{
+            display: block;
+            background: #0f172a;
+            color: #00ffcc;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+
+        button{
+            padding: 8px 12px;
+            margin-top: 10px;
+            border: none;
+            background: #2563eb;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: #1e40af;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>JavaScript Variables (Easy Learning)</h1>
+ 
+<section>
+    <h3>1. What is a Variable?</h3>
+    <p>A variable is a container used to store data values.</p>
+
+    <code>
+let name = "Samjana";  
+console.log(name);
+    </code>
+
+     
+</section>
+ 
+<section>
+    <h3>2. Declaration</h3>
+    <p>Declaration means creating a variable name.</p>
+
+    <code>
+let age;
+    </code>
+
+     
+</section>
+ 
+<section>
+    <h3>3. Initialization</h3>
+    <p>Initialization means assigning a value.</p>
+
+    <code>
+let age;
+age = 20;
+console.log(age);
+    </code>
+
+     
+</section>
+
+ 
+<section>
+    <h3>4. var, let, const</h3>
+
+    <p><b>var</b> → old method</p>
+    <p><b>let</b> → can change value</p>
+    <p><b>const</b> → cannot change value</p>
+
+    <code>
+var city = "Chennai";
+let marks = 90;
+const country = "India";
+    </code>
+
+     
+</section>
+ 
+<section>
+    <h3>5. JavaScript Engine</h3>
+    <p>JavaScript runs using engines like V8, SpiderMonkey, JavaScriptCore.</p>
+
+    <code>
+console.log("V8 - Chrome");
+console.log("SpiderMonkey - Firefox");
+console.log("JavaScriptCore - Safari");
+    </code>
+
+    
+</section>
+ 
+<section>
+    <h3>6. Printing Statements</h3>
+
+    <p>Used to display output.</p>
+
+    <code>
+console.log("Hello World");
+alert("Welcome");
+document.write("JS Learning");
+    </code>
+
+</section>
+
+<script >
+    function varExample(){
+        let name = "Samjana";
+        console.log("Variable:", name);
+        alert(name);
+    }
+
+    function declarationExample(){
+        let age;
+        console.log("Declared variable:", age);
+        alert("Variable declared but not assigned");
+    }
+
+    function initExample(){
+        let age;
+        age = 20;
+        console.log("Initialized age:", age);
+        alert(age);
+    }
+
+    function typeExample(){
+        var city = "Chennai";
+        let marks = 90;
+        const country = "India";
+
+        console.log(city);
+        console.log(marks);
+        console.log(country);
+
+        alert(city + ", " + marks + ", " + country);
+    }
+
+    function engineExample(){
+        console.log("V8 - Chrome");
+        console.log("SpiderMonkey - Firefox");
+        console.log("JavaScriptCore - Safari");
+
+        alert("Check console for engines");
+    }
+
+    function printExample(){
+        console.log("Hello World");
+        alert("Welcome to JavaScript");
+    }
+</script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/script2.js"></script>
+<script src="assets/js/script3.js"></script>
+
+</body>
+</html>
