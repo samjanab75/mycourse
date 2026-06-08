@@ -1,0 +1,162 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+    <h1>Variables and Data Types in JavaScript</h1>
+
+    <h2>What is a Variable?</h2>
+    <p>
+        A variable is a container used to store data values.
+    </p>
+
+    <h2>Variable Keywords</h2>
+    <ul>
+        <li><strong>var</strong> - Old way of declaring variables.</li>
+        <li><strong>let</strong> - Modern variable declaration.</li>
+        <li><strong>const</strong> - Constant value, cannot be reassigned.</li>
+    </ul>
+
+    <h2>Data Types</h2>
+
+    <h3>1. String</h3>
+    <pre>
+let studentName = "Samjana";
+console.log(studentName);
+    </pre>
+
+    <h3>2. Number</h3>
+    <pre>
+let age = 20;
+console.log(age);
+    </pre>
+
+    <h3>3. Boolean</h3>
+    <pre>
+let isStudent = true;
+console.log(isStudent);
+    </pre>
+
+    <h3>4. Undefined</h3>
+    <pre>
+let address;
+console.log(address);
+    </pre>
+
+    <h3>5. Null</h3>
+    <pre>
+let marks = null;
+console.log(marks);
+    </pre>
+
+    <h3>6. BigInt</h3>
+    <pre>
+let population = 12345678901234567890n;
+console.log(population);
+    </pre>
+
+    <h3>7. Symbol</h3>
+    <pre>
+let uniqueId = Symbol("id");
+console.log(uniqueId);
+    </pre>
+
+    <h2>Easy Memory Trick</h2>
+
+    <p><strong>SNBUNBS</strong></p>
+
+    <ul>
+        <li>S → String</li>
+        <li>N → Number</li>
+        <li>B → Boolean</li>
+        <li>U → Undefined</li>
+        <li>N → Null</li>
+        <li>B → BigInt</li>
+        <li>S → Symbol</li>
+    </ul>
+
+    <h2>Summary Table</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Data Type</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>String</td>
+            <td>"Hello"</td>
+        </tr>
+        <tr>
+            <td>Number</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Boolean</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>Undefined</td>
+            <td>let x;</td>
+        </tr>
+        <tr>
+            <td>Null</td>
+            <td>null</td>
+        </tr>
+        <tr>
+            <td>BigInt</td>
+            <td>123n</td>
+        </tr>
+        <tr>
+            <td>Symbol</td>
+            <td>Symbol("id")</td>
+        </tr>
+    </table>
+
+    <h2>One-Line Revision</h2>
+
+    <p>
+        Variable = Stores Data → Data Types:
+        String, Number, Boolean, Undefined, Null, BigInt, Symbol.
+    </p>
+
+
+    <script>
+        // String
+let studentName = "Samjana";
+console.log(studentName); // Samjana
+
+// Number
+let age = 20;
+console.log(age); // 20
+
+// Boolean
+let isStudent = true;
+console.log(isStudent); // true
+
+// Undefined
+let address;
+console.log(address); // undefined
+
+// Null
+let marks = null;
+console.log(marks); // null
+
+// BigInt
+let population = 12345678901234567890n;
+console.log(population); // 12345678901234567890n
+
+// Symbol
+let uniqueId = Symbol("id");
+console.log(uniqueId); // Symbol(id)
+
+
+
+    </script>
+
+     
+ </body>
+ </html>

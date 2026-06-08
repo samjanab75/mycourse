@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+     
+        <h1>JavaScript Primitive Data Types</h1>
+
+    <ul>
+        <li><strong>String</strong> → Text values ("Hello", "Samjana")</li>
+        <li><strong>Number</strong> → Numeric values (10, 99.5)</li>
+        <li><strong>Boolean</strong> → true or false</li>
+        <li><strong>Undefined</strong> → Variable declared but not assigned a value</li>
+        <li><strong>Null</strong> → Intentional empty value</li>
+        <li><strong>BigInt</strong> → Large integers (12345678901234567890n)</li>
+        <li><strong>Symbol</strong> → Unique identifier (Symbol("id"))</li>
+    </ul>
+
+    <h2>Easy Memory Trick</h2>
+
+    <p>
+        <strong>S N B U N B S</strong>
+    </p>
+
+    <ol>
+        <li>S → String</li>
+        <li>N → Number</li>
+        <li>B → Boolean</li>
+        <li>U → Undefined</li>
+        <li>N → Null</li>
+        <li>B → BigInt</li>
+        <li>S → Symbol</li>
+    </ol>
+
+    <h2>Examples</h2>
+
+    <pre>
+String    : "Hello"
+Number    : 100
+Boolean   : true
+Undefined : undefined
+Null      : null
+BigInt    : 123456789n
+Symbol    : Symbol("id")
+    </pre>
+
+
+    <script>
+        // String
+let studentName = "Samjana";
+console.log(studentName, typeof studentName);
+
+// Number
+let studentAge = 20;
+console.log(studentAge, typeof studentAge);
+
+// Boolean
+let isStudent = true;
+console.log(isStudent, typeof isStudent);
+
+// Undefined
+let address;
+console.log(address, typeof address);
+
+// Null
+let marks = null;
+console.log(marks, typeof marks);
+
+// BigInt
+let population = 12345678901234567890n;
+console.log(population, typeof population);
+
+// Symbol
+let uniqueId = Symbol("id");
+console.log(uniqueId, typeof uniqueId);
+
+// Object
+let student = {
+    name: "Samjana",
+    age: 20
+};
+console.log(student, typeof student);
+
+ 
+    </script>
+ </body>
+ </html>

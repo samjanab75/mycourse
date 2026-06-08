@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+   
+    <h1>JavaScript const Keyword</h1>
+
+    <h2>Definition</h2>
+    <p>
+        <strong>const</strong> is used to declare a variable whose value
+        cannot be reassigned after initialization.
+    </p>
+
+    <h2>Rules of const</h2>
+    <ol>
+        <li>Must be initialized during declaration.</li>
+        <li>Cannot be reassigned.</li>
+        <li>Block scoped.</li>
+        <li>Used for fixed values.</li>
+    </ol>
+
+    <h2>Syntax</h2>
+    <pre>
+const variableName = value;
+    </pre>
+
+    <h2>Correct Example</h2>
+    <pre>
+const studentName = "Samjana";
+console.log(studentName);
+    </pre>
+
+    <h2>Incorrect Example</h2>
+    <pre>
+const age;
+console.log(age);
+
+// Error:
+// Missing initializer in const declaration
+    </pre>
+
+    <h2>Cannot Reassign</h2>
+    <pre>
+const city = "Chennai";
+
+city = "Mumbai"; // Error
+    </pre>
+
+    <h2>Easy Memory Trick</h2>
+    <p>
+        <strong>CONST = Constant Value</strong>
+    </p>
+
+    <ul>
+        <li>C → Create</li>
+        <li>O → Once</li>
+        <li>N → No Reassignment</li>
+        <li>S → Same Value</li>
+        <li>T → Throughout Program</li>
+    </ul>
+
+    <h2>Comparison</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Keyword</th>
+            <th>Can Reassign?</th>
+            <th>Initialization Required?</th>
+        </tr>
+        <tr>
+            <td>var</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>let</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>const</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+
+    <h2>One-Line Revision</h2>
+    <p>
+        <strong>const = Declare + Initialize + No Reassign</strong>
+    </p>
+
+
+    <script>
+        // const variable initialization
+
+const studentName = "Samjana";
+console.log(studentName);
+
+const age = 20;
+console.log(age);
+
+const isActive = true;
+console.log(isActive);
+
+const course = "JavaScript";
+console.log(course);
+
+const fee = 5000;
+console.log(fee);
+    </script>
+ </body>
+ </html>
