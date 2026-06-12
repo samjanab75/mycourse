@@ -1,0 +1,127 @@
+ <script>
+
+    //Function Tasks 1
+    function  greet (params) { //----> function declaration
+    console.log( "welcome to javascript");//------> its displays the message 
+          }
+          greet()//-------> its executes the function
+
+   //Task 2
+
+   let name="chiran"//-------> its stores the  variable
+   function showName(params) {
+   console.log(name);
+    }
+    showName()
+
+
+    //Task 3
+
+   function addNumbers(params) {
+    let num1=30;
+    let num2=40;
+    let sum=num1+num2;
+    console.log("my result:",sum);
+          }
+   addNumbers ()
+
+   // Task 4
+    function  Square () {
+        let number = 5;
+        let result = number * number;
+        console.log("square:",result);
+ }
+Square();
+
+
+   // Task 5
+
+ function studentInfo(params) {
+    console.log("name: samjana bhandari");
+    console.log("course:Full Stack Development");
+    console.log("City: Chennai");
+}
+studentInfo() 
+
+// Array Tasks 6
+
+
+let fruits = ["Apple", "Banana","Kiwi","Grapes","Mango"]
+console.log(fruits);
+
+
+//Task 7:Create an Array of 5 Student Names
+
+let students = ["samjana","chiran","kiran","devilal","vishnu"]
+ console.log("second student:",students[1]);
+ console.log("first student:",students[0]);
+ console.log("third student:", students[2]);
+ 
+ // task 8 : Display Last Value Using Array Length
+
+ let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,23,45,89,77,];
+ console.log("lastValue:",numbers[numbers.length -1]);
+ 
+ // Task9 :Create an Empty Array and Add Values Using Index
+
+ let skills = [];
+ skills[0] = "Js"
+ skills[1] = "Css"
+ skills[2] = "Html"
+ skills[3] = "BootStrap"
+ skills[4] = "TailWind"
+ console.log(skills);
+
+ // Task 10: Create an Array of 5 Colors and Display Using For Loop
+
+ let Colors = ["White","Blue","Purple","Black","Green","yellow","Red"];
+ for (let i = 0; i < Colors.length; i++) {
+    console.log(Colors[i]);
+}
+ // Object Tasks 11 Create a Student Object
+
+ let student = {name: "samjana",age:24 ,course:"full stack development"};
+    console.log(student);
+    
+
+// Task 12: Create an Employee Object
+ let employee = {
+    employeeName:"John",
+    employeeId: 101,
+    department: "IT"
+};
+
+console.log(employee.employeeName);
+
+
+//Task 13: Create a Mobile Object
+
+let mobile = {
+    brand: "Samsung",
+    model: "Galaxy S24",
+    price: 75000
+};
+
+console.log(mobile["price"]);
+ 
+//  Task 14: Create a Car Object
+
+let car = {
+    brand: "Toyota",
+    model: "Innova"
+};
+
+console.log("Brand:", car.brand);
+console.log("Model:", car.model);
+
+// Task 15: Create a College Object
+let college = {
+    collegeName: "ABC College",
+    location: "Chennai",
+    students: 2000
+};
+
+console.log("College Name:", college.collegeName);
+console.log("Location:", college.location);
+console.log("Students:", college.students);
+ </script>
