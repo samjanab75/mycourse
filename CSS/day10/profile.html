@@ -1,83 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Profile</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#f5f5f5,#e8f5e9);
+}
+
+nav{
+    background:#222;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+}
+
+nav a:hover{
+    color:#28a745;
+}
+
+.profile{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    width:400px;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    margin:15px 0;
+    border:5px solid green;
+}
+
+.red{
+    color:red;
+}
+
+.green{
+    color:green;
+}
+
+.detail{
+    display:flex;
+    justify-content:space-around;
+    margin:20px 0;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    color:white;
+    cursor:pointer;
+}
+
+.follow{
+    background:green;
+}
+
+.message{
+    background:red;
+}
+
+.call-btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#28a745;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:25px;
+}
+</style>
+
 </head>
-<body class="bg-gradient-to-r from-red-100 to-green-100 min-h-screen">
+<body>
 
-<nav class="bg-gray-900 text-white p-4">
-    <div class="max-w-7xl mx-auto flex justify-between">
-        <h1 class="text-2xl font-bold">
-            <span class="text-red-500">REDR</span>
-            <span class="text-green-500">EVENT</span>
-        </h1>
-
-        <div class="space-x-5">
-            <a href="index.html">Home</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="gallery.html">Gallery</a>
-        </div>
-    </div>
+<nav>
+    <a href="profile.html">Profile</a>
+    <a href="dashboard.html">Services</a>
+    <a href="gallery.html">Gallery</a>
 </nav>
 
-<div class="flex justify-center items-center py-10">
+<div class="profile">
+    <div class="card">
 
-<div class="bg-white shadow-2xl rounded-3xl p-8 max-w-md text-center">
+        <h1>Profile</h1>
 
-<h1 class="text-3xl font-bold mb-4">Profile</h1>
+        <img src="logored.png" alt="Logo">
 
-<img src="assets/image/logored.png"
-class="w-40 h-40 rounded-full mx-auto border-4 border-red-500">
+        <h2>Event Decoration</h2>
 
-<h2 class="text-2xl font-bold mt-4">
-Event Decoration
-</h2>
+        <p>
+            Create unforgettable moments with our professional event decoration services.
+        </p>
 
-<p class="text-gray-600 mt-3">
-Create unforgettable moments with our professional event decoration services. From elegant weddings to vibrant birthday parties, we bring creativity, style and perfection to every celebration.
-</p>
+        <h2>
+            <span class="red">REDR</span>
+            <span class="green">EVENT</span>
+        </h2>
 
-<h2 class="text-3xl font-bold mt-5">
-<span class="text-red-500">REDR</span>
-<span class="text-green-500">EVENT</span>
-</h2>
+        <div class="detail">
+            <div>
+                <h4>Following</h4>
+                <p>700</p>
+            </div>
 
-<div class="grid grid-cols-3 gap-4 mt-6">
+            <div>
+                <h4>Followers</h4>
+                <p>770</p>
+            </div>
 
-<div>
-<h4 class="font-semibold">Following</h4>
-<p>700</p>
-</div>
+            <div>
+                <h4>Posts</h4>
+                <p>7</p>
+            </div>
+        </div>
 
-<div>
-<h4 class="font-semibold">Followers</h4>
-<p>770</p>
-</div>
+        <button class="follow">Follow Us</button>
+        <button class="message">Message</button>
 
-<div>
-<h4 class="font-semibold">Posts</h4>
-<p>7</p>
-</div>
+        <br>
 
-</div>
+        <a href="tel:+919876543210" class="call-btn">
+            📞 Call Now
+        </a>
 
-<div class="flex justify-center gap-4 mt-6">
-
-<button class="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-600">
-Follow Us
-</button>
-
-<button class="bg-green-500 text-white px-5 py-2 rounded-lg hover:bg-green-600">
-Message
-</button>
-
-</div>
-
-</div>
+    </div>
 </div>
 
 </body>

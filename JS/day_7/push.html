@@ -1,0 +1,99 @@
+ <script>
+
+    let movies=["GOAT","Leo","Master"]
+    movies.push("Ghilli")
+    console.log(movies);
+    movies.pop();
+    console.log(movies);
+
+    movies=["Ajith","Suriya","SK"]
+    movies.unshift("Vijai");
+    console.log(movies);
+    movies.shift();
+    console.log(movies);
+
+    let fruits =["Apple","Mango","Orange"]
+    fruits.push("Banana","Grapes")
+    console.log(fruits);
+    fruits.pop();
+    console.log(fruits);
+    fruits.unshift("Pineapple");
+    console.log(fruits);
+    fruits.shift();
+    console.log(fruits);
+    
+    let object={
+   name:"Sudhan",
+   course:"MERN",
+   city:"Chennai"
+}
+
+console.log(object.name,object.course,object.city);
+console.log(object["name"],object["course"],object["city"]);
+
+let mobiles = [
+
+    {
+        brand:"Samsung",
+        price:20000
+    },
+
+    {
+        brand:"iPhone",
+        price:80000
+    },
+
+    {
+        brand:"OnePlus",
+        price:35000
+    }
+
+];
+
+for(let i=0; i<mobiles.length; i++){
+
+    console.log(mobiles[i].brand + " - " + mobiles[i].price);
+
+}
+
+movies = [
+
+    {
+        movie:"GOAT",
+        collection:800
+    },
+
+    {
+        movie:"Leo",
+        collection:600
+    },
+
+    {
+        movie:"Master",
+        collection:500
+    }
+
+];
+
+let total = 0;
+let highest = movies[0].collection;
+let highestMovie = movies[0].movie;
+
+for(let i=0; i<movies.length; i++){
+
+    total = total + movies[i].collection;
+
+    if(movies[i].collection > highest){
+
+        highest = movies[i].collection;
+        highestMovie = movies[i].movie;
+
+    }
+
+}
+
+console.log("Total Collection =", total);
+console.log("Highest Collection =", highest);
+console.log("Movie Name with Highest Collection =", highestMovie); 
+
+</script>

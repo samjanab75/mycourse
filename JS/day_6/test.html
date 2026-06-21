@@ -1,0 +1,194 @@
+ <script>
+
+let numbers1 = [1,2,3,5];
+
+let missing;
+
+for(let i=0; i<numbers1.length-1; i++){
+
+    if(numbers1[i+1] !== numbers1[i] + 1){
+
+        missing = numbers1[i] + 1;
+
+    }
+
+}
+
+console.log("Missing Number :", missing);
+
+
+
+
+let word = "programming";
+
+for(let i=0; i<word.length; i++){
+
+    let count = 0;
+
+    for(let j=0; j<word.length; j++){
+
+        if(word[i] === word[j]){
+            count++;
+        }
+
+    }
+
+    if(count === 1){
+        console.log("First Non-Repeated Character :", word[i]);
+        break;
+    }
+
+}
+
+
+
+
+let text = "javascript";
+
+for(let i=0; i<text.length; i++){
+
+    let count = 0;
+
+    for(let j=0; j<text.length; j++){
+
+        if(text[i] === text[j]){
+            count++;
+        }
+
+    }
+
+    if(count > 1){
+        console.log("First Repeated Character :", text[i]);
+        break;
+    }
+
+}
+
+
+
+let numbers2 = [1,0,2,0,3,4,0];
+
+let result = [];
+
+let zeros = [];
+
+for(let i=0; i<numbers2.length; i++){
+
+    if(numbers2[i] === 0){
+        zeros.push(numbers2[i]);
+    }
+    else{
+        result.push(numbers2[i]);
+    }
+
+}
+
+let finalArray = result.concat(zeros);
+
+console.log("Move Zeros :", finalArray);
+
+
+
+let heros1 = ["Vijay","Ajith","Vijay","SK"];
+
+let count1 = {};
+
+for(let i=0; i<heros1.length; i++){
+
+    if(count1[heros1[i]]){
+        count1[heros1[i]]++;
+    }
+    else{
+        count1[heros1[i]] = 1;
+    }
+
+}
+
+console.log("Count Occurrences");
+
+for(let key in count1){
+    console.log(key + " = " + count1[key]);
+}
+
+
+
+let numbers3 = [1,2,2,3,2,4,1];
+
+let count2 = {};
+
+let max = 0;
+
+let mostFrequent;
+
+for(let i=0; i<numbers3.length; i++){
+
+    if(count2[numbers3[i]]){
+        count2[numbers3[i]]++;
+    }
+    else{
+        count2[numbers3[i]] = 1;
+    }
+
+    if(count2[numbers3[i]] > max){
+        max = count2[numbers3[i]];
+        mostFrequent = numbers3[i];
+    }
+
+}
+
+console.log("Most Frequent Element :", mostFrequent);
+
+
+
+let numbers4 = [1,2,3,4,5,6];
+
+let even = [];
+
+let odd = [];
+
+for(let i=0; i<numbers4.length; i++){
+
+    if(numbers4[i] % 2 === 0){
+        even.push(numbers4[i]);
+    }
+    else{
+        odd.push(numbers4[i]);
+    }
+
+}
+
+console.log("Even :", even);
+
+console.log("Odd :", odd);
+
+
+
+let heros2 = ["Vijay","Ajith","Suriya","SK"];
+
+let first = heros2.shift();
+
+heros2.push(first);
+
+console.log("Rotate Left :", heros2);
+
+
+
+let heros3 = ["Vijay","Ajith","Suriya","SK"];
+
+let last = heros3.pop();
+
+heros3.unshift(last);
+
+console.log("Rotate Right :", heros3);
+
+
+
+let names = ["Vijay","Ajith","Sivakarthikeyan","Dhanush"];
+
+names.sort(function(a,b){
+    return b.length - a.length;
+});
+
+console.log("Second Longest Name :", names[1]);
+
+</script>

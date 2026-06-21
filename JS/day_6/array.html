@@ -1,0 +1,400 @@
+ <script>
+
+let heroes1 = ["Vijay","Ajith","Suriya","SK"];
+
+for(let i=0; i<heroes1.length; i++){
+
+    console.log(heroes1[i]);
+
+}
+
+
+
+let collections1 = [200,500,800,400,600];
+
+let highest = collections1[0];
+
+for(let i=0; i<collections1.length; i++){
+
+    if(collections1[i] > highest){
+
+        highest = collections1[i];
+
+    }
+
+}
+
+console.log(highest);
+
+
+
+let collections2 = [200,500,800,400,600];
+
+let lowest = collections2[0];
+
+for(let i=0; i<collections2.length; i++){
+
+    if(collections2[i] < lowest){
+
+        lowest = collections2[i];
+
+    }
+
+}
+
+console.log(lowest);
+
+
+
+let collections3 = [200,500,800,400,600];
+
+let total = 0;
+
+for(let i=0; i<collections3.length; i++){
+
+    total += collections3[i];
+
+}
+
+console.log(total);
+
+
+
+let average = total / collections3.length;
+
+console.log(average);
+
+
+
+let heroes2 = ["Vijay","Ajith","Suriya","SK"];
+
+for(let i=heroes2.length-1; i>=0; i--){
+
+    console.log(heroes2[i]);
+
+}
+
+
+
+let fruits1 = ["Apple","Mango","Orange","Banana"];
+
+let searchFruit = "Mango";
+
+let found = false;
+
+for(let i=0; i<fruits1.length; i++){
+
+    if(fruits1[i] === searchFruit){
+
+        found = true;
+
+    }
+
+}
+
+if(found){
+
+    console.log("Fruit Found");
+
+}
+else{
+
+    console.log("Fruit Not Found");
+
+}
+
+
+
+let fruits2 = ["Apple","Mango","Orange","Banana"];
+
+let count = 0;
+
+for(let fruit of fruits2){
+
+    count++;
+
+}
+
+console.log(count);
+
+
+
+let heroes3 = ["Vijay","Ajith","Sivakarthikeyan","SK"];
+
+let longest = heroes3[0];
+
+for(let i=0; i<heroes3.length; i++){
+
+    if(heroes3[i].length > longest.length){
+
+        longest = heroes3[i];
+
+    }
+
+}
+
+console.log(longest);
+
+
+
+let movie = "LEVEL";
+
+let reversedMovie = "";
+
+for(let i=movie.length-1; i>=0; i--){
+
+    reversedMovie += movie[i];
+
+}
+
+if(movie === reversedMovie){
+
+    console.log("Palindrome");
+
+}
+else{
+
+    console.log("Not Palindrome");
+
+}
+
+
+
+let hero = "VIJAY";
+
+let reverseHero = "";
+
+for(let i=hero.length-1; i>=0; i--){
+
+    reverseHero += hero[i];
+
+}
+
+console.log(reverseHero);
+
+
+
+let a = 0;
+
+let b = 1;
+
+console.log(a);
+
+console.log(b);
+
+for(let i=3; i<=10; i++){
+
+    let c = a + b;
+
+    console.log(c);
+
+    a = b;
+
+    b = c;
+
+}
+
+
+
+let heroName = "SURIYA";
+
+let vowelsCount = 0;
+
+for(let i=0; i<heroName.length; i++){
+
+    if(
+        heroName[i] === "A" ||
+        heroName[i] === "E" ||
+        heroName[i] === "I" ||
+        heroName[i] === "O" ||
+        heroName[i] === "U"
+    ){
+
+        vowelsCount++;
+
+    }
+
+}
+
+console.log(vowelsCount);
+
+
+
+let hero2 = "VIJAY";
+
+let character = "A";
+
+let frequency = 0;
+
+for(let i=0; i<hero2.length; i++){
+
+    if(hero2[i] === character){
+
+        frequency++;
+
+    }
+
+}
+
+console.log(frequency);
+
+
+
+let word1 = "LISTEN".toLowerCase();
+
+let word2 = "Silent".toLowerCase();
+
+let sort1 = word1.split("").sort().join("");
+
+let sort2 = word2.split("").sort().join("");
+
+if(sort1 === sort2){
+
+    console.log("Anagram");
+
+}
+else{
+
+    console.log("Not Anagram");
+
+}
+
+
+
+let number1 = 153;
+
+let temp1 = number1;
+
+let armstrong = 0;
+
+while(temp1 > 0){
+
+    let digit = temp1 % 10;
+
+    armstrong += digit ** 3;
+
+    temp1 = parseInt(temp1 / 10);
+
+}
+
+if(armstrong === number1){
+
+    console.log("Armstrong Number");
+
+}
+else{
+
+    console.log("Not Armstrong Number");
+
+}
+
+
+
+let primeNumber = 17;
+
+let isPrime = true;
+
+for(let i=2; i<primeNumber; i++){
+
+    if(primeNumber % i === 0){
+
+        isPrime = false;
+
+    }
+
+}
+
+if(isPrime){
+
+    console.log("Prime Number");
+
+}
+else{
+
+    console.log("Not Prime Number");
+
+}
+
+
+
+let factorialNumber = 5;
+
+let factorial = 1;
+
+for(let i=1; i<=factorialNumber; i++){
+
+    factorial *= i;
+
+}
+
+console.log(factorial);
+
+
+
+let number2 = 12345;
+
+let reverseNumber = 0;
+
+while(number2 > 0){
+
+    let digit = number2 % 10;
+
+    reverseNumber = reverseNumber * 10 + digit;
+
+    number2 = parseInt(number2 / 10);
+
+}
+
+console.log(reverseNumber);
+
+
+
+let heroes4 = ["Vijay","Ajith","Suriya","SK"];
+
+console.log(heroes4[0]);
+
+
+
+console.log(heroes4[heroes4.length-1]);
+
+
+
+let heroes5 = ["Vijay","Ajith","Suriya","SK","Dhanush"];
+
+let middleIndex = parseInt(heroes5.length / 2);
+
+console.log(heroes5[middleIndex]);
+
+
+
+let n1 = 4;
+
+console.log(heroes5[n1-1]);
+
+
+
+let collections4 = [700,500,900,400,800];
+
+collections4.sort(function(a,b){
+
+    return b-a;
+
+});
+
+console.log(collections4[0]);
+
+
+
+console.log(collections4[1]);
+
+
+
+console.log(collections4[2]);
+
+
+
+let n2 = 4;
+
+console.log(collections4[n2-1]);
+
+</script>

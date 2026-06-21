@@ -1,76 +1,106 @@
  <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gallery</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+nav{
+    background:#222;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.card:hover img{
+    transform:scale(1.1);
+}
+
+.content{
+    padding:20px;
+}
+
+.content h3{
+    color:red;
+    margin-bottom:10px;
+}
+</style>
+
 </head>
-<body class="bg-gray-100">
+<body>
 
-<nav class="bg-gray-900 text-white p-4">
-    <div class="max-w-7xl mx-auto flex justify-between">
-        <h1 class="text-2xl font-bold">
-            <span class="text-red-500">REDR</span>
-            <span class="text-green-500">EVENT</span>
-        </h1>
-
-        <div class="space-x-5">
-            <a href="index.html">Home</a>
-            <a href="profile.html">Profile</a>
-            <a href="dashboard.html">Dashboard</a>
-        </div>
-    </div>
+<nav>
+    <a href="profile.html">Profile</a>
+    <a href="dashboard.html">Services</a>
+    <a href="gallery.html">Gallery</a>
 </nav>
 
-<h1 class="text-center text-4xl font-bold my-8">
-REDR EVENT GALLERY
-</h1>
+<div class="container">
 
-<div class="max-w-7xl mx-auto p-5 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div class="card">
+        <img src="music-stage.jpg" alt="">
+        <div class="content">
+            <h3>Music Stage</h3>
+            <p>Two hearts, one melody, and a lifetime of love.</p>
+        </div>
+    </div>
 
-<div class="relative group overflow-hidden rounded-xl shadow">
-<img src="assets/image/evn1.jpg" class="h-72 w-full object-cover">
-<div class="absolute inset-0 bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-Grand Wedding Reception
-</div>
-</div>
+    <div class="card">
+        <img src="mandap.jpg" alt="">
+        <div class="content">
+            <h3>Wedding Mandap</h3>
+            <p>The sacred space where two souls begin their journey.</p>
+        </div>
+    </div>
 
-<div class="relative group overflow-hidden rounded-xl shadow">
-<img src="assets/image/evn2.jpg" class="h-72 w-full object-cover">
-<div class="absolute inset-0 bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-Haldi Ceremony Decoration
-</div>
-</div>
-
-<div class="relative group overflow-hidden rounded-xl shadow">
-<img src="assets/image/evn4.jpg" class="h-72 w-full object-cover">
-<div class="absolute inset-0 bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-Traditional Mehendi Celebration
-</div>
-</div>
-
-<div class="relative group overflow-hidden rounded-xl shadow">
-<img src="assets/image/evn5.jpg" class="h-72 w-full object-cover">
-<div class="absolute inset-0 bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-Engagement Decorations
-</div>
-</div>
-
-<div class="relative group overflow-hidden rounded-xl shadow">
-<img src="assets/image/evn3.jpg" class="h-72 w-full object-cover">
-<div class="absolute inset-0 bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-Royal Engagement Ceremony
-</div>
-</div>
-
-<div class="relative group overflow-hidden rounded-xl shadow">
-<img src="assets/image/evn7.jpg" class="h-72 w-full object-cover">
-<div class="absolute inset-0 bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-Reception Decoration
-</div>
-</div>
+    <div class="card">
+        <img src="reception.jpg" alt="">
+        <div class="content">
+            <h3>Reception Stage</h3>
+            <p>Create beautiful memories and timeless photographs.</p>
+        </div>
+    </div>
 
 </div>
 
