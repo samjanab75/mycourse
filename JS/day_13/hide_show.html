@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10">
+
+<h1 class="text-4xl font-bold text-center mb-10">
+DOM JS 
+</h1>
+
+<!-- Task 1 -->
+<div class="bg-white p-5 rounded shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 1 - Display Hero Name</h2>
+
+<input id="hero" type="text" placeholder="Enter Hero Name"
+class="border p-2 rounded">
+
+<button onclick="showHero()"
+class="bg-blue-500 text-white px-4 py-2 rounded">
+Show
+</button>
+
+<h2 id="heroResult" class="mt-3 text-green-600 text-2xl"></h2>
+</div>
+
+<!-- Task 2 -->
+<div class="bg-white p-5 rounded shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 2 - Hide Paragraph</h2>
+
+<p id="hidePara">
+This paragraph will hide.
+</p>
+
+<button onclick="hideParagraph()"
+class="bg-red-500 text-white px-4 py-2 rounded mt-2">
+Hide
+</button>
+</div>
+
+<!-- Task 3 -->
+<div class="bg-white p-5 rounded shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 3 - Show Paragraph</h2>
+
+<p id="showPara" style="display:none;">
+Hidden paragraph is visible now.
+</p>
+
+<button onclick="showParagraph()"
+class="bg-green-500 text-white px-4 py-2 rounded mt-2">
+Show
+</button>
+</div>
+
+<!-- Task 4 -->
+<div class="bg-white p-5 rounded shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 4 - Toggle Paragraph</h2>
+
+<p id="togglePara">
+Toggle Me
+</p>
+
+<button onclick="toggleParagraph()"
+class="bg-purple-500 text-white px-4 py-2 rounded">
+Toggle
+</button>
+</div>
+
+<!-- Task 5 -->
+<div class="bg-white p-5 rounded shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 5 - Username Check</h2>
+
+<input id="username" type="text"
+placeholder="Enter Username"
+class="border p-2 rounded">
+
+<button onclick="checkUser()"
+class="bg-blue-500 text-white px-4 py-2 rounded">
+Login
+</button>
+
+<h3 id="userResult" class="mt-3"></h3>
+</div>
+
+<!-- Task 6 -->
+<div class="bg-white p-5 rounded shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 6 - Password Strength</h2>
+
+<input id="password" type="password"
+placeholder="Enter Password"
+class="border p-2 rounded">
+
+<button onclick="checkPassword()"
+class="bg-blue-500 text-white px-4 py-2 rounded">
+Check
+</button>
+
+<h3 id="passwordResult" class="mt-3"></h3>
+</div>
+
+<!-- Task 7 -->
+<div class="bg-white p-5 rounded shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 7 - Full Name</h2>
+
+<input id="fname" type="text"
+placeholder="First Name"
+class="border p-2 rounded">
+
+<input id="lname" type="text"
+placeholder="Last Name"
+class="border p-2 rounded">
+
+<button onclick="fullName()"
+class="bg-blue-500 text-white px-4 py-2 rounded">
+Display
+</button>
+
+<h2 id="fullNameResult" class="mt-3 text-green-600"></h2>
+</div>
+
+<!-- Task 8 -->
+<div class="bg-white p-5 rounded shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 8 - Change Image</h2>
+
+<img id="image"
+src="https://picsum.photos/200"
+class="w-52 rounded">
+
+<button onclick="changeImage()"
+class="bg-indigo-500 text-white px-4 py-2 rounded mt-3">
+Change Image
+</button>
+</div>
+
+<!-- Task 9 -->
+<div class="bg-white p-5 rounded shadow mb-5">
+<h2 id="heading">
+Hello World
+</h2>
+
+<button onclick="changeHeading()"
+class="bg-pink-500 text-white px-4 py-2 rounded mt-3">
+Change Heading
+</button>
+</div>
+
+<!-- Task 10 -->
+<div class="bg-white p-5 rounded shadow mb-5">
+<h2 class="text-xl font-bold mb-3">Task 10 - Form Validation</h2>
+
+<input id="value"
+type="text"
+placeholder="Enter Something"
+class="border p-2 rounded">
+
+<button onclick="submitForm()"
+class="bg-blue-500 text-white px-4 py-2 rounded">
+Submit
+</button>
+
+<h3 id="formResult" class="mt-3"></h3>
+</div>
+
+<!-- Task 11 -->
+<div class="bg-white p-5 rounded shadow">
+<h2 class="text-xl font-bold mb-3">Task 11 - Counter</h2>
+
+<button onclick="counter()"
+class="bg-green-500 text-white px-4 py-2 rounded">
+Click
+</button>
+
+<h2 id="count">
+0
+</h2>
+</div>
+
+<script>
+
+function showHero(){
+let hero=document.getElementById("hero").value;
+document.getElementById("heroResult").innerText=hero;
+}
+
+function hideParagraph(){
+document.getElementById("hidePara").style.display="none";
+}
+
+function showParagraph(){
+document.getElementById("showPara").style.display="block";
+}
+
+let visible=true;
+
+function toggleParagraph(){
+
+if(visible){
+document.getElementById("togglePara").style.display="none";
+visible=false;
+}
+else{
+document.getElementById("togglePara").style.display="block";
+visible=true;
+}
+
+}
+
+function checkUser(){
+
+let user=document.getElementById("username").value;
+
+if(user=="admin"){
+document.getElementById("userResult").innerText="Login Success";
+}
+else{
+document.getElementById("userResult").innerText="Invalid User";
+}
+
+}
+
+function checkPassword(){
+
+let password=document.getElementById("password").value;
+
+if(password.length>=8){
+document.getElementById("passwordResult").innerText="Strong Password";
+}
+else{
+document.getElementById("passwordResult").innerText="Weak Password";
+}
+
+}
+
+function fullName(){
+
+let first=document.getElementById("fname").value;
+let last=document.getElementById("lname").value;
+
+document.getElementById("fullNameResult").innerText=first+" "+last;
+
+}
+
+function changeImage(){
+
+document.getElementById("image").src="https://picsum.photos/300";
+
+}
+
+function changeHeading(){
+
+let head=document.getElementById("heading");
+
+head.innerText="JavaScript DOM";
+
+head.style.color="red";
+
+}
+
+function submitForm(){
+
+let value=document.getElementById("value").value;
+
+if(value==""){
+document.getElementById("formResult").innerText="Please Enter Value";
+}
+else{
+document.getElementById("formResult").innerText="Form Submitted";
+}
+
+}
+
+let count=0;
+
+function counter(){
+
+count++;
+
+document.getElementById("count").innerText=count;
+
+}
+
+</script>
+
+</body>
+</html>

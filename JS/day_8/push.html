@@ -1,0 +1,145 @@
+ <script>
+
+   // push()
+
+    let array = ["HTML","CSS","JavaScript"]
+    courses.push("React");
+    courses.push("Node.js");
+    console.log(courses);
+
+    //pop() Method
+
+    let courses = ["HTML", "CSS", "JavaScript", "React"];
+    let removed = courses.pop();
+    console.log("Removed Element:", removed);
+    console.log("Updated Array:", courses);
+
+
+    //shift() Method
+
+    let fruits = ["Apple", "Mango", "Orange", "Banana"];
+    let removedFruit = fruits.shift();
+    console.log("Removed Fruit:", removedFruit); 
+    console.log("Updated Array:", fruits);
+
+   //  unshift() Method
+
+    let actors = ["Ajith", "Suriya", "SK"];
+    actors.unshift("Vijay");
+    actors.unshift("Dhanush");
+    console.log(actors);
+
+    //splice() Method
+
+    let skills = ["HTML", "CSS", "Bootstrap", "React"];
+    skills.splice(2, 1, "JavaScript");
+    console.log(skills);
+
+    //slice() Method
+
+    let course = ["HTML", "CSS", "JavaScript", "React", "Node"];
+    let newArray = course.slice(2, 4);
+    console.log(newArray);
+
+    //Object Looping (for...in)
+
+    let student = {
+  name: "Sudhan",
+  course: "MERN",
+  city: "Chennai",
+  age: 25
+};
+
+for (let key in student) {
+  console.log(key + " : " + student[key]);
+}
+
+
+//Array of Objects Looping
+
+let actor = [
+  {
+    name: "Vijay",
+    movie: "GOAT"
+  },
+  {
+    name: "Ajith",
+    movie: "Vidaamuyarchi"
+  },
+  {
+    name: "Suriya",
+    movie: "Kanguva"
+  }
+];
+
+for (let actor of actor) {
+  console.log(actor.name + " - " + actor.movie);
+}
+
+// join() Method
+
+let actorss = ["Vijay", "Ajith", "Suriya", "SK"];
+
+let result = actorss.join(" | ");
+
+console.log(result);
+
+
+//includes() Method
+
+let coursess = ["HTML", "CSS", "JavaScript", "React"];
+
+if (coursess.includes("React")) {
+  console.log("Course Found");
+} else {
+  console.log("Course Not Found");
+}
+
+
+//concat()
+
+// let arr1 = ["HTML", "CSS"];
+// let arr2 = ["JavaScript", "React"];
+// let result = arr1.concat(arr2);
+// console.log(result);
+
+// indexOf()
+
+// let fruits = ["Apple", "Mango", "Orange"];
+// console.log(fruits.indexOf("Mango"));
+ 
+// lastIndexOf()
+
+// let nums = [10, 20, 30, 20, 40];
+// console.log(nums.lastIndexOf(20));
+
+ 
+ 
+// reverse()
+
+// let nums = [1, 2, 3, 4, 5];
+// nums.reverse();
+// console.log(nums);
+
+ // sort()
+
+// let fruits = ["Orange", "Apple", "Mango"];
+// fruits.sort();
+// console.log(fruits);
+// ["Apple", "Mango", "Orange"]
+
+
+// toString()
+// let fruits = ["Apple", "Mango", "Orange"];
+// console.log(fruits.toString());
+// Apple,Mango,Orange
+// length
+// let courses = ["HTML", "CSS", "JavaScript", "React"];
+// console.log(courses.length);
+
+ 
+
+ 
+
+
+ </script>

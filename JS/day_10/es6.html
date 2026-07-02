@@ -1,0 +1,235 @@
+<script>
+ 
+//  ES6 Intermediate Level Tasks
+
+//Task 1 - Student Report Generator
+
+const students = {
+    name: "Sudhan",
+    course: "MERN",
+    city: "Chennai"
+};
+
+const { names, cours, citi} = student;
+
+console.log(`
+Student Name : ${names}
+Course : ${cours}
+City : ${citi}
+`);
+
+//Task 2 - Hero Array Merge
+
+let heroe1 = ["Vijay", "Ajith"];
+let heroe2 = ["Suriya", "SK"];
+
+let heroe = [...heroe1, ...heroe2];
+
+heroes.forEach(hero => console.log(hero));
+
+
+// Task 3 - Movie Collection Calculator
+
+const calculateTotal = (...collections) => {
+    let total = 0;
+
+    for (let amount of collections) {
+        total += amount;
+    }
+
+    console.log(`Total Collection : ${total}`);
+};
+
+calculateTotal(500, 800, 300, 700);
+ 
+// Task 4 - Employee Object Update
+
+const employee = {
+    name: "Rahul",
+    department: "IT",
+    salary: 30000
+};
+
+const updatedEmployee = {
+    ...employee,
+    experience: 2
+};
+
+const { namess, department, salary, experience } = updatedEmployee;
+
+console.log(namess);
+console.log(department);
+console.log(salary);
+console.log(experience);
+
+//Task 5 - Online Course Enrollment System
+
+const enrollStudent = (studentName, ...courses) => {
+    console.log(`Student : ${studentName}`);
+    console.log("Courses :");
+
+    courses.forEach(course => console.log(course));
+};
+
+enrollStudent(
+    "Sudhan",
+    "React",
+    "Node",
+    "MongoDB"
+);
+
+
+
+// let → Reassign allowed, block scoped.
+// const → Reassign not allowed, block scoped.
+// Arrow Function (=>) → Short function syntax.
+// Template Literals (${}) → Embed variables inside strings.
+// Destructuring → Extract values from arrays/objects.
+// Spread (...) → Copy or merge arrays/objects.
+// Rest (...) → Collect multiple values into one array.
+
+
+
+
+
+   
+
+
+ let nam = "Sam";
+
+name = "Sudhan";
+
+console.log(name);
+
+ 
+// task 2 - let Scope
+
+if (true) {
+    let city = "Chennai";
+}
+
+console.log(city);
+ 
+//Task 3 - const
+const cour = "MERN";
+
+cour = "Java";
+
+console.log(cour);
+
+
+// Task 4 - Arrow Function
+
+const greet = () => {
+    console.log("Welcome To JavaScript");
+};
+
+greet();
+
+// Task 5 - Arrow Function With Parameters
+
+const showHero = (heroName) => {
+    console.log(`Hero Name : ${heroName}`);
+};
+
+showHero("Vijay");
+
+//Task 6 - Arrow Function Addition
+
+const add = (a, b) => {
+    console.log(a + b);
+};
+
+add(10, 20);
+
+//Task 7 - Template Literals
+
+let hero = "Vijay";
+
+console.log(`My Favourite Hero is ${hero}`);
+
+// Task 8 - Template Literals Multiple Values
+
+let name = "Sudhan";
+let course = "MERN";
+let city = "Chennai";
+
+console.log(`My name is ${name}, studying ${course}, from ${city}.`);
+
+//Task 9 - Array Destructuring
+
+let heroes = ["Vijay", "Ajith", "Suriya"];
+
+let [hero1, hero2] = heroes;
+
+console.log(hero1);
+console.log(hero2);
+
+//Task 10 - Object Destructuring
+
+let studen = {
+    name: "Sudhan",
+    course: "MERN",
+    city: "Chennai"
+};
+
+let { na, cou } = studen;
+
+console.log(na);
+console.log(cou);
+
+ 
+// Task 11 - Spread Operator (Array Copy)
+
+let courses = ["HTML", "CSS", "JavaScript"];
+
+let newCourses = [...courses, "React"];
+
+console.log(newCourses);
+
+// Task 12 - Spread Operator (Merge Arrays)
+
+let heroes1 = ["Vijay", "Ajith"];
+let heroes2 = ["Suriya", "SK"];
+let allHeroes = [...heroes1, ...heroes2];
+
+console.log(allHeroes);
+
+
+
+// Task 13 - Spread Operator (Object Copy)
+let student = {
+    name: "Sudhan",
+    city: "Chennai"
+};
+
+let updatedStudent = {
+    ...student,
+    course: "MERN"
+};
+
+console.log(updatedStudent);
+
+ 
+// Task 14 - Rest Parameter
+const total = (...numbers) => {
+    console.log(numbers);
+};
+
+total(10, 20, 30, 40);
+
+ 
+// Task 15 - Rest + Sum
+const sum = (...numbers) => {
+    let total = 0;
+
+    for (let num of numbers) {
+        total += num;
+    }
+
+    console.log(total);
+};
+
+sum(10, 20, 30, 40, 50);
+
+</script>

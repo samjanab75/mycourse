@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom to hide box </title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+ </head>
+  <body class="p-10">
+
+  <!-- Box -->
+  <div id="box" class="w-40 h-40 bg-blue-500 mb-4 rounded"></div>
+
+
+  <button
+    onclick="toggleBox()"
+    class="bg-green-500 text-white px-4 py-2 rounded"
+  >
+    Hide / Unhide
+  </button>
+
+  <script>
+    function toggleBox() {
+      document.getElementById("box").classList.toggle("hidden");
+    }
+  </script>
+    
+ </body>
+ </html>

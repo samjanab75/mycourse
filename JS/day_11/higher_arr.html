@@ -1,0 +1,170 @@
+<script>
+//map() to uppercase 
+
+const letters =  ["Vijay","Ajith", "Suriya"];
+const uppercase = letters.map(letters => letters.toUpperCase());
+console.log(uppercase);
+
+//collections--- Multiply
+
+const collections =[100,200,300,300,400,500];
+const results= collections.map(collections => collections*10);
+console.log(results);
+ 
+// add movie name before movie name 
+
+ const movies =["Selai","Sattai","Goat","Karuppan"];
+ const outcome = movies.map( movie => "movie:" + movie);
+ console.log(outcome);
+ 
+// filter greater value
+
+const datas = [100,200,300,400,500,600,700,];
+const output =datas.filter( ( datas=> datas >= 400));
+console.log(output);
+ 
+
+//Display only passed students 
+
+const mark= [40,70,12,23.17,7,31];
+const passMark = mark.filter((mark=> mark >=30));
+console.log(passMark);
+
+//Display names having more than 4 characters
+
+const nam = ["Sam","JD","Rithi","Chiran","Kiran"];
+const four= nam.filter((nam=> nam.length >4));
+console.log (four);
+
+// find() 
+
+const heros= ["surya","vijay","ajith","sk",]
+const find = heros.find(heros=> heros.length<4);
+console.log(find);
+
+//findIndex() Tasks
+const heroes = [
+  "Vijay",
+  "Ajith",
+  "Suriya"
+];
+
+const indexs = heroes.findIndex(hero => hero === "Suriya");
+
+alert("Index of Suriya: " + index);
+console.log(index);
+
+//findIndex() Tasks
+
+const movie = [
+  "GOAT",
+  "Leo",
+  "Master"
+];
+
+const index = movies.findIndex(movie => movie === "Leo");
+
+alert("Index of Leo: " + index);
+console.log(index);
+
+// Task  – some()
+
+const marks = [35, 80, 20, 90];
+
+const result = marks.some(mark => mark < 35);
+
+alert(result);
+console.log(result);
+
+//every
+
+const collection = [100, 200, 900];
+
+let resultss= collection.some(collections=> collection > 800);
+
+alert(result);
+console.log(result);
+
+
+// every
+
+const markss= [50, 70, 90, 40];
+
+const resul = markss.every(markss => markss >= 35);
+
+alert(result);
+console.log(result);
+
+// reduce ()
+
+const collectio = [100, 200, 300, 400];
+
+const total = collections.reduce((sum, value) => sum + value, 0);
+
+alert("Total Collection: " + total);
+console.log(total);
+
+
+// map()
+
+const students = [
+  {
+    id: 1,
+    name: "Sudhan"
+  },
+  {
+    id: 2,
+    name: "Rahul"
+  }
+];
+
+let names = students.map(student => student.name);
+
+alert(names);
+console.log(names);
+
+// filter 
+
+
+const student = [
+  {
+    id: 1,
+    age: 20
+  },
+  {
+    id: 2,
+    age: 30
+  },
+  {
+    id: 3,
+    age: 18
+  }
+];
+
+const resuls= students.filter(student => student.age > 20);
+
+console.log(result);
+alert(JSON.stringify(result));
+
+// find()
+
+const stude = [
+  {
+    id: 1,
+    name: "Sudhan"
+  },
+  {
+    id: 2,
+    name: "Rahul"
+  }
+];
+
+const studey = students.find(student => student.id === 2);
+
+console.log(student);
+
+alert(JSON.stringify(student));
+
+</script>
+
+ 

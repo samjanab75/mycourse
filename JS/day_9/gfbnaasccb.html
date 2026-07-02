@@ -1,0 +1,140 @@
+ <script>
+
+
+//Task 1 – Global Scope
+
+let hero = "Vijay";
+
+function showHero() {
+    console.log("Inside Function:", hero);
+}
+
+showHero();
+
+if (true) {
+    console.log("Inside If Block:", hero);
+}
+
+for (let i = 0; i < 1; i++) {
+    console.log("Inside Loop:", hero);
+}
+ 
+// Task 2 – Function Scope
+const movie = () => {
+    let collection = 800;
+};
+
+movie();
+
+console.log(collection);
+
+ 
+
+// Task 3 – Block Scope
+
+if (true) {
+    var actor1 = "Ajith";
+    let actor2 = "Vijay";
+}
+
+console.log(actor1);
+console.log(actor2);
+
+ 
+// Task 4 – Named Function
+
+function showMovie() {
+    console.log("GOAT Movie Released");
+}
+
+showMovie();
+
+
+// Task 5 – Arrow Function
+
+const add = (a, b) => {
+    console.log("Sum =", a + b);
+};
+
+add(10, 20);
+
+
+//Task 6 – Anonymous Callback Function
+
+function booking(callback) {
+    callback();
+}
+
+booking(() => {
+    console.log("Booking Confirmed");
+});
+
+ 
+// Task 7 – setTimeout()
+
+setTimeout(() => {
+    console.log("Movie Started");
+}, 2000);
+
+ 
+
+ 
+//Task 8 – Callback Function
+
+function processOrder(callback) {
+    console.log("Order Received");
+    callback();
+}
+
+processOrder(() => {
+    console.log("Order Delivered");
+});
+
+ 
+// Task 9 – Counter Closure
+function counter() {
+    let count = 0;
+
+    return function () {
+        count++;
+        console.log(count);
+    };
+}
+
+let increment = counter();
+
+increment();
+increment();
+increment();
+
+ 
+
+// Task 10 – Banking Closure
+
+function bankAccount() {
+    let balance = 5000;
+
+    return {
+        deposit(amount) {
+            balance += amount;
+            console.log("Deposited:", amount);
+        },
+
+        withdraw(amount) {
+            balance -= amount;
+            console.log("Withdrawn:", amount);
+        },
+
+        checkBalance() {
+            console.log("Balance:", balance);
+        }
+    };
+}
+
+let account = bankAccount();
+
+account.deposit(1000);
+account.withdraw(500);
+account.checkBalance();
+
+ </script>

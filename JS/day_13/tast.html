@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col items-center gap-4 mt-10">
+
+  <input
+    type="text"
+    id="command"
+    placeholder="Type hide or show"
+    class="border p-2 rounded"
+  >
+
+  <button onclick="controlBox()"
+    class="bg-blue-500 text-white px-4 py-2 rounded">
+    Submit
+  </button>
+
+  <div id="box" class="w-40 h-40 bg-red-500"></div>
+
+  <script>
+    function controlBox() {
+      const input = document.getElementById("command").value.toLowerCase();
+      const box = document.getElementById("box");
+
+      if (input === "hide") {
+        box.style.display = "none";
+      } else if (input === "show") {
+        box.style.display = "block";
+      } else {
+        alert("Type only 'hide' or 'show'");
+      }
+    }
+  </script>
+
+</body>
+</html>

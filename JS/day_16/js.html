@@ -1,0 +1,222 @@
+/* =====================================================
+   1. Why Callback?
+   =====================================================
+
+Definition:
+A callback is a function passed as an argument to another
+function. It is executed after the first function finishes.
+
+Why Callback?
+- Execute a function after another function completes.
+- Handle asynchronous operations.
+- Avoid blocking the program.
+
+Example:
+
+function greet(name, callback) {
+    console.log("Hello " + name);
+    callback();
+}
+
+function bye() {
+    console.log("Goodbye!");
+}
+
+greet("Sam", bye);
+
+Output:
+Hello Sam
+Goodbye!
+
+Interview Answer:
+Callback is used to execute a function after another
+function completes. It is commonly used in asynchronous
+operations such as events, timers, and API calls.
+
+
+
+=====================================================
+2. Why Promise?
+=====================================================
+
+Definition:
+A Promise is an object that represents the eventual
+completion or failure of an asynchronous operation.
+
+Why Promise?
+- Solve Callback Hell.
+- Improve code readability.
+- Better error handling.
+- Chain asynchronous tasks.
+
+Promise States:
+1. Pending
+2. Fulfilled
+3. Rejected
+
+Example:
+
+let promise = new Promise((resolve, reject) => {
+    let success = true;
+
+    if(success){
+        resolve("Data Loaded");
+    }
+    else{
+        reject("Something Went Wrong");
+    }
+});
+
+promise
+.then(result => console.log(result))
+.catch(error => console.log(error));
+
+Output:
+Data Loaded
+
+Interview Answer:
+Promise is used to solve Callback Hell and manage
+asynchronous operations more efficiently using
+.then() and .catch().
+
+
+
+=====================================================
+3. Why Async/Await?
+=====================================================
+
+Definition:
+Async/Await is a modern way to work with Promises.
+It makes asynchronous code look like synchronous code.
+
+Why Async/Await?
+- Cleaner syntax.
+- Easy to read.
+- Easy to debug.
+- Avoid multiple .then() methods.
+
+Example:
+
+function getData() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve("Data Received");
+        }, 2000);
+    });
+}
+
+async function showData() {
+    let result = await getData();
+    console.log(result);
+}
+
+showData();
+
+Output (after 2 seconds):
+Data Received
+
+Interview Answer:
+Async/Await is used to write Promise-based asynchronous
+code in a cleaner and more readable way.
+
+
+
+=====================================================
+4. Why Fetch?
+=====================================================
+
+Definition:
+fetch() is a built-in JavaScript function used to
+communicate with servers and APIs.
+
+Why Fetch?
+- Retrieve data from APIs.
+- Send data to servers.
+- Perform HTTP requests.
+- Replace XMLHttpRequest.
+
+HTTP Methods:
+GET    -> Retrieve Data
+POST   -> Create Data
+PUT    -> Update Data
+DELETE -> Delete Data
+
+Example using .then():
+
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.log(error));
+
+Example using Async/Await:
+
+async function getUsers() {
+    try {
+        let response = await fetch("https://jsonplaceholder.typicode.com/users");
+        let users = await response.json();
+        console.log(users);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+
+getUsers();
+
+Interview Answer:
+Fetch is used to communicate with APIs by sending
+HTTP requests and receiving data from servers.
+
+
+
+=====================================================
+Interview Flow
+=====================================================
+
+Synchronous JavaScript
+        ↓
+Callback
+        ↓
+Problem → Callback Hell
+        ↓
+Promise
+        ↓
+Problem → Long .then() Chains
+        ↓
+Async/Await
+        ↓
+Fetch API
+        ↓
+Communicate with Server/API
+
+
+
+=====================================================
+One-Line Interview Answers
+=====================================================
+
+Why Callback?
+Execute a function after another function completes.
+
+Why Promise?
+Solve Callback Hell and improve asynchronous programming.
+
+Why Async/Await?
+Write Promise code in a cleaner and more readable way.
+
+Why Fetch?
+Communicate with APIs to retrieve or send data using HTTP requests.
+
+
+
+=====================================================
+Easy Shortcut to Remember
+=====================================================
+
+Callback    → Run after another function finishes.
+
+Promise     → Solve Callback Hell.
+
+Async/Await → Cleaner way to write Promise code.
+
+Fetch       → Get or send data from/to an API.
